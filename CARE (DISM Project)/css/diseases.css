@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SAFE BODY */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.diseases {
+   padding: 12rem 7% 5rem;
+   background: #fdfdfd;
+   min-height: 100vh;
+}
+
+.heading {
+   text-align: center;
+   font-size: 3.5rem;
+   color: #444;
+   text-transform: uppercase;
+   margin-bottom: 4rem;
+}
+
+.heading span {
+   color: #16a085;
+   border-bottom: .3rem solid #16a085;
+}
+
+.box-container {
+   display: grid;
+   /* grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr)); */
+   grid-template-columns: repeat(3, 1fr);
+   gap: 2.5rem;
+}
+
+.box {
+   background: #fff;
+   border-radius: 1.5rem;
+   padding: 2rem;
+   text-align: center;
+   border: .1rem solid rgba(0, 0, 0, .1);
+   border-top: .5rem solid #16a085;
+   transition: .4s ease;
+   box-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .05);
+}
+
+.box:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 1.5rem 3rem rgba(22, 160, 133, 0.15);
+}
+
+.image-container {
+   height: 25rem;
+   width: 25rem;
+   margin: 0 auto 1.5rem;
+   overflow: hidden;
+   border-radius: 50%;
+   background: #f9f9f9;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: .2rem solid #eee;
+}
+
+.box img {
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+
+.box h3 {
+   font-size: 3rem;
+   color: #16a085;
+   margin-bottom: 1.2rem;
+}
+
+.content {
+   text-align: left;
+   border-top: .1rem solid #eee;
+   padding-top: 1rem;
+}
+
+.content p {
+   font-size: 1.8rem;
+   color: #666;
+   line-height: 1.5;
+   margin-bottom: 0.6rem;
+   padding-left: 2rem;
+   position: relative;
+}
+
+.content p::before {
+   content: '\f058';
+   font-family: 'Font Awesome 5 Free';
+   font-weight: 900;
+   position: absolute;
+   left: 0;
+   color: #16a085;
+}
+
+.content b {
+   color: #333;
+}
+
+@media (max-width: 992px) {
+   .box-container {
+      grid-template-columns: repeat(2, 1fr);
+   }
+}
+
+@media (max-width: 576px) {
+   .box-container {
+      grid-template-columns: 1fr;
+   }
+}

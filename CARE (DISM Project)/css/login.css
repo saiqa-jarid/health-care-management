@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Reset */
+*{
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* 🌤️ LIGHT GRADIENT BACKGROUND */
+body{
+    min-height:100vh;
+    /* background: linear-gradient(-45deg, #e3f2fd, #fce4ec, #e0f7fa, #f3e5f5); */
+    background: linear-gradient(-45deg, #f0fdf9, #e6f9f3, #e8f0fb, #f5f9ff);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+/* Smooth Animation */
+@keyframes gradientBG{
+    0%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+    100%{ background-position:0% 50%; }
+}
+
+/* ✅ WRAPPER (Fix for navbar + footer layout) */
+.login-wrapper{
+    min-height: 100vh; /* adjust if header/footer height differs */
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* 🤍 GLASS CARD */
+.form-container{
+    width:100%;
+    max-width:380px;
+    padding:35px;
+    border-radius:20px;
+    background: rgba(255,255,255,0.85);
+    backdrop-filter: blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.1);
+    color:#333;
+    text-align:center;
+    animation: fadeIn 1s ease;
+}
+
+/* Fade Animation */
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* Heading */
+.form-container h2{
+    margin-bottom:20px;
+    font-weight:600;
+    color:#222;
+}
+
+/* Input Box */
+.input-box{
+    position:relative;
+    margin:15px 0;
+}
+
+/* Inputs */
+.input-box input{
+    width:100%;
+    padding:12px 45px 12px 12px;
+    border:none;
+    border-radius:10px;
+    outline:none;
+    background:#f5f5f5;
+    color:#333;
+    transition:0.3s;
+}
+
+/* Focus */
+.input-box input:focus{
+    background:#fff;
+    box-shadow:0 0 8px rgba(0,0,0,0.1);
+}
+
+/* Placeholder */
+.input-box input::placeholder{
+    color:#888;
+}
+
+/* Eye Icon */
+.input-box i{
+    position:absolute;
+    right:12px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#555;
+}
+
+/* Button */
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:25px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color:#fff;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:10px;
+    transition:0.3s;
+}
+
+/* Hover */
+button:hover{
+    transform:scale(1.05);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Links */
+p{
+    margin-top:15px;
+    font-size:14px;
+}
+
+.form-container p{
+    margin-top:15px;
+}
+
+a{
+    color:#5c6bc0;
+    text-decoration:none;
+    font-weight:500;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* Error */
+.error{
+    color:#e53935;
+    margin-bottom:10px;
+    font-size:14px;
+}
+
+/* 📱 Responsive */
+@media(max-width:480px){
+    .form-container{
+        padding:25px;
+    }
+
+    .form-container h2{
+        font-size:22px;
+    }
+
+    .input-box input{
+        padding:10px;
+    }
+
+    button{
+        padding:10px;
+        font-size:14px;
+    }
+}

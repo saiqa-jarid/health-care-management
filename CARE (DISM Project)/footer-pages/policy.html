@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Insurance Policy</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f4f8fb;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+        }
+
+        /* HEADER */
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            color: #1e2a38;
+        }
+
+        .header p {
+            color: #6c7a89;
+        }
+
+        /* CARD */
+        .card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* ICON TITLE */
+        .card h2 {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #185a9d;
+        }
+
+        .card h2 i {
+            color: #43cea2;
+        }
+
+        .card p {
+            line-height: 1.7;
+            color: #444;
+        }
+
+        /* LIST */
+        .card ul {
+            margin-top: 10px;
+            padding-left: 20px;
+        }
+
+        .card ul li {
+            margin-bottom: 8px;
+        }
+
+        /* HIGHLIGHT BOX */
+        .highlight {
+            background: linear-gradient(135deg, #43cea2, #185a9d);
+            color: #fff;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        /* FOOTER */
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #888;
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+
+            width: 45px;
+            height: 45px;
+
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 50%;
+            font-size: 20px;
+
+            text-decoration: none;
+            z-index: 9999;
+
+            transition: 0.3s;
+        }
+
+        .close-btn:hover {
+            background: #ff4d4d;
+            transform: scale(1.1);
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:768px) {
+            .header h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="javascript:history.back()" class="close-btn">
+        <i class="fa-solid fa-xmark"></i>
+    </a>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="header">
+            <h1><i class="fas fa-heartbeat"></i> HealthCare Insurance Policy</h1>
+            <p>Your health, our priority — comprehensive coverage for a secure future</p>
+        </div>
+
+        <!-- INTRO -->
+        <div class="card">
+            <h2><i class="fas fa-file-contract"></i> Policy Overview</h2>
+            <p>
+                Our healthcare insurance policy is designed to provide financial protection and access to quality
+                medical services.
+                We aim to ensure that every individual receives timely and affordable healthcare without worrying about
+                expenses.
+                This policy covers a wide range of medical services, including consultations, diagnostics,
+                hospitalization, and emergency care.
+            </p>
+        </div>
+
+        <!-- COVERAGE -->
+        <div class="card">
+            <h2><i class="fas fa-shield-heart"></i> Coverage Benefits</h2>
+            <ul>
+                <li>✔ Doctor consultations and specialist visits</li>
+                <li>✔ Hospitalization and surgical procedures</li>
+                <li>✔ Emergency and ambulance services</li>
+                <li>✔ Diagnostic tests and lab services</li>
+                <li>✔ Maternity and newborn care</li>
+                <li>✔ Chronic disease management</li>
+            </ul>
+        </div>
+
+        <!-- ELIGIBILITY -->
+        <div class="card">
+            <h2><i class="fas fa-user-check"></i> Eligibility & Enrollment</h2>
+            <p>
+                Individuals aged 18 to 65 are eligible to enroll in this policy. Family plans are also available,
+                allowing coverage
+                for spouses and children under a single plan. Enrollment can be completed online through our platform
+                with minimal documentation.
+            </p>
+        </div>
+
+        <!-- CLAIM PROCESS -->
+        <div class="card">
+            <h2><i class="fas fa-hand-holding-medical"></i> Claim Process</h2>
+            <p>
+                Our claim process is simple and transparent. Patients can avail cashless treatment at our network
+                hospitals
+                or apply for reimbursement by submitting medical bills and reports. Claims are processed quickly to
+                ensure
+                minimal delay in financial support.
+            </p>
+        </div>
+
+        <!-- EXCLUSIONS -->
+        <div class="card">
+            <h2><i class="fas fa-ban"></i> Exclusions</h2>
+            <ul>
+                <li>❌ Cosmetic or non-medical procedures</li>
+                <li>❌ Self-inflicted injuries</li>
+                <li>❌ Treatments not prescribed by certified doctors</li>
+                <li>❌ Pre-existing conditions (within waiting period)</li>
+            </ul>
+        </div>
+
+        <!-- HIGHLIGHT -->
+        <div class="highlight">
+            <h2><i class="fas fa-star"></i> Why Choose Our Policy?</h2>
+            <p>
+                ✔ Affordable premiums
+                ✔ Wide hospital network
+                ✔ Fast claim approvals
+                ✔ 24/7 customer support
+            </p>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="footer">
+            <p>© 2026 HealthCare System | All Rights Reserved</p>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* RESET (⚠️ Important: DO NOT break navbar) */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+/* BODY BACKGROUND */
+body{
+    min-height:100vh;
+    /* background: linear-gradient(-45deg, #e3f2fd, #fce4ec, #e0f7fa, #f3e5f5); */
+    background: linear-gradient(-45deg, #f0fdf9, #e6f9f3, #e8f0fb, #f5f9ff);
+    background-size:400% 400%;
+    animation: gradientBG 12s ease infinite;
+}
+
+@keyframes gradientBG{
+    0%{ background-position:0% 50%; }
+    50%{ background-position:100% 50%; }
+    100%{ background-position:0% 50%; }
+}
+
+/* ✅ MAIN WRAPPER (center like login) */
+.register-wrapper{
+    min-height: calc(100vh - 120px);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:40px 20px;
+}
+
+/* ✅ FORM CARD (FIX WIDTH ISSUE) */
+.card{
+    width:100%;
+    max-width:420px;   /* 🔥 prevents full width */
+    padding:30px;
+    border-radius:15px;
+    background:#ffffff;
+    margin:auto;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+/* Hover */
+.card:hover{
+    transform: translateY(-5px);
+}
+
+/* FORM */
+form{
+    width: 100%;
+}
+
+.position-relative{
+    position:relative;
+}
+
+/* LABEL FIX (prevents sideways overflow) */
+label{
+    display:block;
+    width:100%;
+    font-weight:600;
+    margin-top:10px;
+    color:#333;
+}
+
+/* INPUTS */
+.form-control,
+.form-select{
+    width:100%;
+    border-radius:10px;
+    padding:10px;
+    border:1px solid #ccc;
+    background:#f9f9f9;
+    transition:0.3s;
+}
+
+/* INPUT FOCUS */
+.form-control:focus,
+.form-select:focus{
+    border-color:#6c63ff;
+    box-shadow:0 0 8px rgba(108,99,255,0.3);
+    background:#fff;
+    outline:none;
+}
+
+/* ROW FIX (prevents overflow) */
+.row{
+    margin-left:0;
+    margin-right:0;
+}
+
+/* COL FIX */
+.col{
+    padding-left:5px;
+    padding-right:5px;
+}
+
+/* BUTTON */
+button,
+.btn{
+    border-radius:25px;
+    padding:12px;
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    border:none;
+    color:#fff;
+    font-size:16px;
+    transition:0.3s;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* BUTTON HOVER */
+button:hover,
+.btn:hover{
+    transform:scale(1.03);
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* PASSWORD EYE ICON */
+.eye{
+    position:absolute;
+    right:15px;
+    top:50%;
+    transform:translateY(-50%);
+    cursor:pointer;
+    color:#555;
+}
+
+/* ERROR TEXT */
+#error{
+    font-size:14px;
+    margin-top:5px;
+    color:red;
+}
+
+/* RESPONSIVE */
+@media(max-width:480px){
+    .card{
+        padding:20px;
+    }
+
+    h3{
+        font-size:20px;
+    }
+}

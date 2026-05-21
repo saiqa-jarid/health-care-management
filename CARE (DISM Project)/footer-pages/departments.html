@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Departments - Health Care</title>
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background:#f5f9ff;
+}
+
+/* CLOSE BUTTON */
+.close-btn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+
+    width: 45px;
+    height: 45px;
+
+    background: rgba(0,0,0,0.6);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    font-size: 20px;
+
+    text-decoration: none;
+    z-index: 9999;
+
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.close-btn:hover{
+    background: #ff4d4d;
+    transform: scale(1.1);
+}
+
+/* HERO */
+.hero{
+    height:60vh;
+    background:linear-gradient(135deg,#43cea2,#185a9d);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    color:#fff;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:42px;
+}
+
+.hero p{
+    margin-top:10px;
+    font-size:16px;
+    opacity:0.9;
+}
+
+/* SECTION */
+.section{
+    padding:70px 10%;
+    text-align:center;
+}
+
+.section h2{
+    font-size:30px;
+    margin-bottom:10px;
+    color:#1e2a38;
+}
+
+.section p{
+    color:#6c7a89;
+    margin-bottom:40px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+/* CARD */
+.card{
+    background:#fff;
+    padding:30px 20px;
+    border-radius:18px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    transition:0.3s;
+    text-align:center;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 40px rgba(0,0,0,0.15);
+}
+
+.card i{
+    font-size:30px;
+    margin-bottom:15px;
+    color:#43cea2;
+}
+
+.card h3{
+    margin-bottom:10px;
+    color:#1e2a38;
+}
+
+.card p{
+    font-size:14px;
+    color:#6c7a89;
+}
+
+/* RESPONSIVE */
+@media(max-width:600px){
+    .hero h1{
+        font-size:28px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- CLOSE BUTTON -->
+<a href="javascript:history.back()" class="close-btn">
+    <i class="fa-solid fa-xmark"></i>
+</a>
+
+<!-- HERO -->
+<section class="hero">
+    <div>
+        <h1><i class="fa-solid fa-hospital"></i> Our Departments</h1>
+        <p>Comprehensive care across multiple specialties</p>
+    </div>
+</section>
+
+<!-- DEPARTMENTS -->
+<section class="section">
+    <h2>Medical Departments</h2>
+    <p>Explore our wide range of healthcare services.</p>
+
+    <div class="grid">
+
+        <div class="card">
+            <i class="fa-solid fa-heart-pulse"></i>
+            <h3>Cardiology</h3>
+            <p>Advanced heart care with expert cardiologists and modern technology.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>Neurology</h3>
+            <p>Specialized treatment for brain, spine, and nervous system disorders.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-baby"></i>
+            <h3>Pediatrics</h3>
+            <p>Comprehensive healthcare services for infants, children, and adolescents.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-user-doctor"></i>
+            <h3>General Medicine</h3>
+            <p>Primary healthcare services for diagnosis and treatment of illnesses.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-scissors"></i>
+            <h3>Surgery</h3>
+            <p>State-of-the-art surgical procedures with experienced surgeons.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-x-ray"></i>
+            <h3>Radiology</h3>
+            <p>Advanced imaging services for accurate diagnosis and treatment.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-lungs"></i>
+            <h3>Pulmonology</h3>
+            <p>Expert care for respiratory and lung-related conditions.</p>
+        </div>
+
+        <div class="card">
+            <i class="fa-solid fa-stethoscope"></i>
+            <h3>Dermatology</h3>
+            <p>Treatment for skin, hair, and cosmetic concerns.</p>
+        </div>
+
+    </div>
+</section>
+
+</body>
+</html>
